@@ -1,8 +1,34 @@
-@import "./vendor/normalize"; 
-@import "colors";
+
+@import "./vendor/normalize";
+
+@import "./partials/colors";
+
+@import "./partials/typography";
+
+@import "./partials/mixins";
+
+@import "./partials/base";
+
+
+*{
+margin: 0;
+padding: 0;
+}
+
 
 $primary-color: #ffffff;
 $secondary-color: #414141;
+$text-small: 12px;
+$text-large: 16px;
+$primary-font:'Big Shoulders Inline Text', cursive;
+$secondary-font:'Open Sans Condensed', sans-serif;
+
+@mixin sec-text(){
+padding: 10px;
+text-align: center;
+}
+
+
 
 body {
   color: $primary-color;
@@ -10,11 +36,75 @@ body {
 }
 
 
-h1{
-    color: red;
+.header__bar figure{
+display: inline-block;
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 5%;
+}
+
+.header__bar figure img{
+  border-radius: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+ 
+}
+
+.header__bar h1{
+display: inline-block;
+color: $primary-color;
+font-family: $primary-font;
+text-align: center;
+}
+
+.header__bar {
+background-color: $secondary-color;
 }
 
 
- 
-  
-  
+nav ul li {
+text-decoration: none;
+color: $secondary-color;
+display: inline;
+margin: 10px;
+}
+
+
+
+
+ nav {
+padding: 15px;
+text-align: center;
+}
+
+.hero {
+width: 100%;
+
+}
+
+
+.section__text{
+@include sec-text();
+font-family: $secondary-font;
+line-height: 1.5;
+}
+   
+
+
+.coffee figure{
+display: inline-block;
+padding-left: 5%;
+padding-bottom: 5%;
+margin-left: 10%;
+}
+
+.footer{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: $text-large;
+  color: green;
+  text-transform: uppercase;
+
+}
