@@ -1,0 +1,20 @@
+@import "./vendor/normalize"; 
+@import "colors";
+
+$primary-color: #ffffff;
+$secondary-color: #414141;
+
+body {
+  color: $primary-color;
+  background: $secondary-color;
+}
+
+
+h1{
+    color: red;
+}
+
+
+ 
+  
+  

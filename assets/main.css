@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 15;
+    font family: sans-serif;
+}
+.header__bar {
+    background-color: #414141;
+    padding: 15px;
+
+}
+
+
+.header__bar figure {
+
+display: inline-block;
+}
+
+.header__bar figure img {
+border-radius: 50%;
+}
+
+.header__bar h1{
+ display: inline-block;
+ color: white;
+
+}
+
+.header__bar{
+
+    background-color: #414141;
+
+}
+
+.navigation{
+    padding: 15;
+
+}
+
